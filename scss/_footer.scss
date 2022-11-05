@@ -62,11 +62,13 @@
 				color: #cccccc;
 			}
 		}
-		.sub-btn{
+		.sub-btn {
 			border-radius: 0px;
-			background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-			background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-			background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+			background-image: -moz-linear-gradient( 0deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+			background-image: -ms-linear-gradient( 0deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+            background-size: 200% 200%;
+            background-position: right;
 			outline: none !important;
 			box-shadow: none !important;
 			padding: 0px;
@@ -74,6 +76,10 @@
 			width: 42px;
 			cursor: pointer;
 			color: #fff;
+            transition: all 0.3s linear;
+            &:hover {
+                background-position: center;
+            }
 		}
 	}
 }

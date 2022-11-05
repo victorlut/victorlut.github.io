@@ -108,7 +108,13 @@
 	/*----------------------------------------------------*/
     /*  Simple LightBox js
     /*----------------------------------------------------*/
-    $('.imageGallery1 .light').simpleLightbox();
+    $('.imageGallery1 .light').simpleLightbox({
+        nav: false
+    });
+
+    $(document).on('click', '.slbImage', () => {
+        $('.slbWrap').click();
+    })
 	
 	$('.counter').counterUp({
 		delay: 10,

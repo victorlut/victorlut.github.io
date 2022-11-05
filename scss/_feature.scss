@@ -34,7 +34,7 @@
 	border-radius: 5px;
 	i{
 		font-size: 24px;
-		background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
+		background: linear-gradient(0deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -86,9 +86,9 @@
 					border-radius: 5px;
 					vertical-align: middle;
 					align-self: center;
-					background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+					background-image: -moz-linear-gradient( 270deg, rgb(0, 91, 187) 0%, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%, rgb(255, 213, 0) 100%);
+					background-image: -webkit-linear-gradient( 270deg, rgb(0, 91, 187) 0%, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%, rgb(255, 213, 0) 100%);
+					background-image: -ms-linear-gradient( 270deg, rgb(0, 91, 187) 0%, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%, rgb(255, 213, 0) 100%);
 				}
 			}
 		}
@@ -101,9 +101,9 @@
 /* My Tabs Area css
 ============================================================================================ */
 .mytabs_area{
-	background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-	background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-	background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+	background-image: -moz-linear-gradient( 270deg, rgb(0, 91, 187) 0%, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%, rgb(255, 213, 0) 100%);
+	background-image: -webkit-linear-gradient( 270deg, rgb(0, 91, 187) 0%, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%, rgb(255, 213, 0) 100%);
+	background-image: -ms-linear-gradient( 270deg, rgb(0, 91, 187) 0%, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%, rgb(255, 213, 0) 100%);
 }
 .tabs_inner{
 	.nav.nav-tabs{
@@ -140,6 +140,7 @@
 				position: relative;
 				padding-top: 40px;
 				padding-bottom: 60px;
+                text-shadow: 0px 0px 4px #000000e3;
 				&:before{
 					content: "";
 					height: 100%;
@@ -271,7 +272,10 @@
 		background: #fff;
 		i{
 			&:before{
-				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+				background-image: -moz-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 20%, rgb(0, 91, 187) 80%, rgb(0, 91, 187) 100%);
+                background-image: -webkit-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 20%, rgb(0, 91, 187) 80%, rgb(0, 91, 187) 100%);
+                background-image: -ms-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 20%, rgb(0, 91, 187) 80%, rgb(0, 91, 187) 100%);
+                
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 			}
@@ -343,6 +347,11 @@
 					font-size: 20px;
 					color: $baseColor;
 				}
+                &:hover {
+                    i {
+                        color: $secondColor;
+                    }
+                }
 			}
 			&:last-child{
 				margin-bottom: 0px;
@@ -366,12 +375,16 @@
 				text-align: center;
 				color: #fff;
 				font-size: 16px;
+                text-shadow: 0px 0px 4px #cdcdcd;
+                background-size: 100% 200%;
+                background-position: top;
+                background-image: -moz-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+                background-image: -webkit-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+                background-image: -ms-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
 			}
 			&:hover{
 				a{
-					background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
-					background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+                    background-position: center;
 				}
 			}
 		}

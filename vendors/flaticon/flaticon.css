@@ -32,3 +32,38 @@ margin-left: 20px;
 .flaticon-skyline:before { content: "\f100"; }
 .flaticon-sketch:before { content: "\f101"; }
 .flaticon-city:before { content: "\f102"; }
+
+.creativity-mask-icon {
+    -webkit-mask-image: url(./creativity.svg);
+    mask-image: url(./creativity.svg);
+    -moz-mask-image: url(./creativity.svg);
+}
+
+.frontend-mask-icon {
+    -webkit-mask-image: url(./frontend.svg);
+    mask-image: url(./frontend.svg);
+    -moz-mask-image: url(./frontend.svg);
+}
+
+.backend-mask-icon {
+    -webkit-mask-image: url(./backend.svg);
+    mask-image: url(./backend.svg);
+    -moz-mask-image: url(./backend.svg);
+}
+
+.icon-gridient-background {
+    width: 60px;
+    height: 60px;
+    background: #e1e1e1;
+    background-image: -moz-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: all 0.2s linear;
+}
+
+.feature_item:hover .icon-gridient-background {
+    background-position: center;
+}
+  
