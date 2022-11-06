@@ -275,9 +275,8 @@ button:focus {
   top: -70px;
   left: 0;
   right: 0;
-  background-image: -moz-linear-gradient(90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
-  background-image: -webkit-linear-gradient(90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
-  background-image: -ms-linear-gradient(90deg, rgb(255, 213, 0) 0%, rgb(255, 213, 0) 50%, rgb(0, 91, 187) 50%, rgb(0, 91, 187) 100%);
+  background-color: rgb(0, 91, 187);
+  border-bottom: 5px solid #ffd500;
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
