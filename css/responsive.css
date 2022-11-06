@@ -426,6 +426,7 @@
 	.tabs_inner .tab-content .tab-pane .list li .media .d-flex {
 		padding-right: 0px;
 		padding-bottom: 18px;
+        justify-content: flex-start;
 	}
 	.tabs_inner .tab-content .tab-pane .list li .media {
 		display: block;
